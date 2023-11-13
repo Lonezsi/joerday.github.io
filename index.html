@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets\icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets\icon.png" type="image/x-icon">
+</head>
+
+<body id="home">
+    <div id="particles-js"> </div>
+    <div class="parallax-bg">
+    <div style="height: 50vh;"></div>
+    <header>
+        <h1>JOERDAY&trade;</h1>
+        <h3>józsr&trade; silly szülinapja</h3>
+    </header>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Cép Képek</a></li>
+            <li><a href="#event-description">Blah Blah</a></li>
+            <li><a href="#quiz">Kvíz</a></li>
+            <li><a href="#feedback">Visszajelzés</a></li>
+        </ul>
+    </nav>
+    <section id="event-description">
+        <h2>Join us for a Fantastic Birthday Celebration!</h2>
+        <p>
+            We're thrilled to invite you to a special birthday celebration! Get ready for an evening filled with
+            joy,
+            laughter, and unforgettable moments. As the big day approaches, we're counting down the moments until we
+            can
+            all come together to celebrate.
+        </p>
+        <p>
+            Date: [Your Event Date]<br>
+            Time: [Event Time]<br>
+            Location: [Event Location]
+        </p>
+        <p>
+            Our team is working hard to make this celebration extraordinary. Check back often for updates on our
+            event
+            plan and see how we're progressing towards the big day. Don't miss out on the fun - mark your calendars
+            and
+            get ready for a fantastic time!
+        </p>
+        <!-- You can add additional details or customize the text based on your preferences -->
+    </section>
+    <section id="quiz" class="quiz-section">
+        <h2>Quiz Time!</h2>
+        <p>What is the capital city of France?</p>
+
+        <form id="quizForm" class="quiz-form">
+
+            <label class="quiz-option" data-answer="paris">
+                <input type="radio" name="answer" value="paris">
+                <span class="radio-btn">Paris</span>
+            </label>
+
+            <label class="quiz-option" data-answer="berlin">
+                <input type="radio" name="answer" value="berlin">
+                <span class="radio-btn">Berlin</span>
+            </label>
+
+            <label class="quiz-option" data-answer="london">
+                <input type="radio" name="answer" value="london">
+                <span class="radio-btn">London</span>
+            </label>
+            
+            <button type="button" class="quiz-submit-btn">Submit Answer</button>
+        </form>
+        <p id="quizResult" class="quiz-result"></p>
+    </section>
+    <section id="feedback">
+        <p> ha ezt olvasod sosem fejeztem be a Visszajelzés-t</p>
+    </section>
+    <section id="info">
+        <h2>Egyéb infó</h2>
+        <p>
+            Szia! Nagyon tetszhet a dolog ha még ezt is olvasod ^^<br>
+            nagyon örülök!<br>
+            ha nem azért olvasod, akkor csak simán neked örülök.<br>
+            <br>
+            ezt a weboldalt józsr készítette.<br>
+            Speciális köszönetek:<br>
+                -Flórának, mert nagyon szeretem<br>
+                -Neked, ha eljöttél<br>
+                -Neked, ha nem jöttél el, mert nagyon sokat jelentetek számomra és megértem ha nem értek épp rá<br>
+                -Turulnak a JoeHub&trade; easteregg kitalálásáért<br>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2023 JOERDAY (no actual copyright exsist. I love you <3)</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

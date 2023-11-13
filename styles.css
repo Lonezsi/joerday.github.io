@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.parallax-bg {
+    background-image: url('assets/scroller.jpg');
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: repeat-y;
+    background-size: cover;
+    z-index: -1;
+    animation: panDown 500s ease-out infinite;
+}
+@keyframes panDown {
+    100% {
+        background-position: center -17200px;
+    }
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(49, 49, 49, 0.2);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #0000007a;
+    backdrop-filter: blur(10px);
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Update your CSS file */
+.quiz-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Align content to the middle horizontally */
+}
+
+.quiz-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-btn {
+    background-color: #ddd;
+    opacity: 75%;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.quiz-option:hover .radio-btn {
+    background-color: #ccc;
+}
+
+.quiz-option input:checked + .radio-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.quiz-submit-btn {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-submit-btn:hover {
+    background-color: #45a049;
+}
+
+.quiz-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-option.wrong .radio-btn {
+    background-color: #ff6262; /* Change to red for wrong answer */
+}
+
+.quiz-submit-btn.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Particle animation for correct answer */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
